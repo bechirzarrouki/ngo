@@ -1,100 +1,108 @@
-/* styles.css */
-
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body and Global Font Styling */
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navbar Styling */
-  nav {
-    background-color: #4A90E2;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav ul li {
-    margin: 0;
-  }
-  
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Content Area */
-  div {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
-  }
-  
-  /* Headers */
-  h1, h2 {
-    color: #4A90E2;
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  /* Paragraphs */
-  p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-  }
-  
-  /* List Styling */
-  ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  /* Footer Styling */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #f7f7f7;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Global Font Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('./Assests/test.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: rgba(74, 144, 226, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px); /* Adds a slight blur effect to the background */
+  border-radius: 0; /* No rounded corners to avoid affecting the full width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow to make it stand out */
+  width: 100%; /* Ensures navbar spans the full width */
+  position: absolute; /* Keep navbar fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures navbar is above other content */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff; /* White text for contrast */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Area */
+div {
+ 
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #dcd7f1;
+  border-radius: 8px;
+  margin-top: 6rem; 
+  margin-right: 5rem;
+}
+
+/* Headers */
+h1, h2 {
+  color: #4A90E2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* List Styling */
+ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #f7f7f7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

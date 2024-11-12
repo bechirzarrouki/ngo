@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-image: url('./Assests/test.png');
+  background-size: cover; /* Cela ajuste l'image pour couvrir toute la fenêtre */
+  background-position: center; /* Cela centre l'image */
+  background-attachment: fixed; /* Cela fait en sorte que l'image ne se déplace pas lors du défilement */
+}
