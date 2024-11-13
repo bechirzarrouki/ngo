@@ -21,6 +21,7 @@ body {
 
 /* Navbar Styling */
 nav {
+  position: fixed;
   background-color: rgba(74, 144, 226, 0.7); /* Semi-transparent background */
   display: flex;
   justify-content: center;
@@ -55,14 +56,14 @@ nav a:hover {
 }
 
 /* Main Content Area */
-div {
+.team-list0 {
  
   max-width: 700px;
   margin: 0 auto;
   background-color: #dcd7f1;
   border-radius: 8px;
-  margin-top: 6rem; 
-  margin-right: 5rem;
+  margin-top: 5rem;
+  margin-right: 3rem;
 }
 
 /* Headers */
@@ -105,4 +106,44 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+
+  
+}
+
+.team-member {
+  padding: 200px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  padding: 1rem;
+  border: 1px solid #ccc; /* Border to make it look like a card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for card effect */
+  background-color: #fff; /* White background for the card */
+}
+
+.team-photo {
+  width: 60px;
+  height: 60px; /* Circular photo */
+  object-fit: cover;
+  border-radius: 50%; /* Keeps the photo circular */
+}
+.tet1{
+  margin-top: 1rem ;
+}
+.team-list2{
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #dcd7f1;
+  border-radius: 8px;
+  margin-top: 4rem;
+  margin-right: 3rem;
 }
